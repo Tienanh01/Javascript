@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer - Start Bootstrap Theme</title>
+     <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+     <!-- Font awesome icons  -->
+     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+     <!-- google font -->
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+     <!-- core css  -->
+     <link rel="stylesheet" href="asset/css/responsive.css">
+     <link href="asset/css/style.css" rel="stylesheet" />
+     <link rel="stylesheet" href="asset/css/_grid.css">
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <!-- js  -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body  id="page-top">
+       <!-- Navigation  -->
+       <nav class="navbar navbar-pd fixed-top">
+        <div class="container display-flex pd-05r ">
+            <a href="#page-top" class="narbar-brand">Start Bootstrap</a>
+            <button id="navbar-menu" class="navbar-menu text-uppercase" onclick="myfunction()" >Menu<i class="fa-solid fa-bars"></i></button>
+            <div id="navbar-collages" class="navbar-collages">
+                <ul class="navbar-nav" id="navbar-nav">                
+                    <li class="navbar-item"><a href="" class="navbar-item-link">Portfolio</a></li>
+                    <li class="navbar-item"><a href="" class="navbar-item-link">About</a></li>
+                    <li class="navbar-item"><a href="" class="navbar-item-link">Contact</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+       
+       </nav>
+       <!-- masthead -->
+       <header id="masthead" class="masthead">
+        <div class="container masthead-wrap" >
+            <img  class="masthead-avatar" src="asset/images/avataaars.svg" alt="">
+            <h1 class="masthead-heading">Start Bootstrap</h1>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-left divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-star"></i></div>
+                <div class="divider-custom-right divider-custom-line"></div>
+            </div>
+            <div class="masthead-subheading">Graphic Artist - Web Designer - Illustrator</div>
+        </div>
+       </header>
+       <!-- portfolio section -->
+       <section id="portfolio" class="portfolio page-section">
+            <div class="container portfolio-wrap">
+                <h2 class="portfolio-text text-uppercase">Portfolio</h2>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-left divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-star"></i></div>
+                    <div class="divider-custom-right divider-custom-line"></div>
+                </div>
+                <div class="row">
+                   <div class="col-lg-4 mb-5">
+                    <div class="portfolio-item "  data-toggle="modal" data-target="#portfolioModal1">
+                        <div class="portfolio-item-caption">
+                            <div class="portfolio-item-caption-content">
+                                <i class="color-light  fs-35 fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="asset/images/cabin.png" alt="cabin.png">
+                    </div>
+                   </div>
+                   <div class="col-lg-4 mb-5">
+                    <div class="portfolio-item "data-toggle="modal" data-target="#portfolioModal2">
+                        <div class="portfolio-item-caption ">
+                            <div class="portfolio-item-caption-content">
+                                <i class="color-light  fs-35 fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="asset/images/cake.png" alt="cabin.png">
+                    </div>
+                   </div>
+                   <div class="col-lg-4 mb-5">
+                    <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal3">
+                        <div class="portfolio-item-caption">
+                            <div class="portfolio-item-caption-content">
+                                <i class="color-light  fs-35 fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="asset/images/circus.png" alt="cabin.png">
+                    </div>
+                   </div>
+                   <div class="col-lg-4 mb-5">
+                    <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal4">
+                        <div class="portfolio-item-caption">
+                            <div class="portfolio-item-caption-content">
+                                <i class="color-light  fs-35 fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="asset/images/game.png" alt="cabin.png">
+                    </div>
+                   </div>
+                   <div class="col-lg-4 mb-5">
+                    <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal5">
+                        <div class="portfolio-item-caption">
+                            <div class="portfolio-item-caption-content">
+                                <i class="color-light  fs-35 fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="asset/images/safe.png" alt="cabin.png">
+                    </div>
+                   </div>
+                   <div class="col-lg-4 mb-5">
+                    <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal6">
+                        <div class="portfolio-item-caption">
+                            <div class="portfolio-item-caption-content">
+                                <i class="color-light  fs-35 fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="asset/images/submarine.png" alt="cabin.png">
+                    </div>
+                   </div>
+                  
+                  </div>
+            </div>
+       </section>
+       <!-- about section  -->
+       <section id="about" class="page-section">
+        <div class="container">
+            <h2 class=" page-section-heading about-text text-uppercase ">About</h2>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-left divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-star"></i></div>
+                <div class="divider-custom-right divider-custom-line"></div>
+            </div>
+            <!-- section about content -->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead">
+                        Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+                    </p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">
+                    You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
+                    </p>
+                </div>
+              
+
+            </div>
+            <div class="text-center mt-4">
+                <a href="" class="btn  btn-outline-light"><i class="fa-solid fa-download"></i>  Free Dowload!</a>
+            </div>
+        </div>
+       </section>
+       <!-- contact section -->
+       <section id="contact">
+        <div class="container contact">
+            <h2 class="contact-text text-uppercase text-align">Contact Me</h2>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-left divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-star"></i></div>
+                <div class="divider-custom-right divider-custom-line"></div>
+            </div>
+              <!-- form contact - -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 ">
+            <form  id="contactForm" novalidate onsubmit="return false">
+                <div class="form-floating mb-3">
+                    <input type="text" id="name" class="form-control" validation="required" placeholder="Enter your name...">
+                    <label for="name">Full name</label>
+                    <div class="invalid-feedback" required>Look not good</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" id="email" class="form-control" placeholder="Enter your email...">
+                    <label for="email">Email address</label>
+                    <div class="invalid-feedback" required>Look not good</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" id="phone" class="form-control" placeholder="Enter your name...">
+                    <label for="phone">Phone number</label>
+                    <div class="invalid-feedback" required>Look not good</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" id="message"  class="form-control" placeholder="Enter your name..." style="height: 10rem">
+                    <label for="message">Message</label>
+                    <div class="invalid-feedback" required>Look not good</div>
+                </div>
+                <button class="btn btn-custom disabled" type="submit">Send</button>
+            </form>
+
+           
+            </div>
+        </div>
+        </div>
+      
+       </section>
+
+       <!-- footer  -->
+       <footer id="footer" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase">Location</h4>
+                    <p class="lead">2215 John Daniel Drive<br>
+                    Clark, MO 65243
+                    </p>
+                </div>
+                <div class="col-lg-4 justify-content-center" >
+                    
+                    <div class="text-content"> <h4 class="text-uppercase">Around The Web</h4></div>
+                    <div class="btn-social-wrap display-flex">
+                       <div class="btn-social"> <a href="#" ><i class="fa-brands fa-facebook-f cfff"></i></a></div>
+                       
+                        <div class="btn-social">  <a href="" ><i class="fa-brands fa-twitter cfff"></i></a>  </div>
+                      <div class="btn-social">  <a href="#" ><i class="fa-brands fa-linkedin-in cfff"></i></a></div>
+
+                      <div class="btn-social">  <a href="" ><i class="fa-sharp fa-light fa-futbol cfff"></i></a></div>
+                    </div>
+
+                  <div class=""> </div>
+                    <div class="btn-social-wrap">  </div>
+
+                    <div class="btn-social-wrap">  </div>
+
+                    <div class="btn-social-wrap"> </div>
+                    
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase">ABOUT FREELANCER</h4>
+                   <p>Freelance is a free to use, MIT licensed<br>
+                    Bootstrap theme created by <a href="#">Start Bootstrap .</a>
+                </p>
+                </div>
+
+            </div>
+        </div>
+       </footer>
+
+       <div class="copyright text-center py-4">
+        <div class="container">
+            <small>Copyright © Your Website 2023</small>
+        </div>
+       </div>
+       <!-- portfolio modal  -->
+       <!-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+      
+    </div> -->
+    <div class="portfolio-modal modal fade bd-example-modal-lg"  id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid  mb-5" src="asset/images/cabin.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" >  <i class="fas fa-xmark fa-fw"></i>Close Window</button>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal 2 -->
+    <div class="portfolio-modal modal fade bd-example-modal-lg"  id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid  mb-5" src="asset/images/cake.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" >  <i class="fas fa-xmark fa-fw"></i>Close Window</button>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 3 -->
+    <div class="portfolio-modal modal fade bd-example-modal-lg"  id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid  mb-5" src="asset/images/circus.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" >  <i class="fas fa-xmark fa-fw"></i>Close Window</button>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 4 -->
+    <div class="portfolio-modal modal fade bd-example-modal-lg"  id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid  mb-5" src="asset/images/game.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" >  <i class="fas fa-xmark fa-fw"></i>Close Window</button>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 5 -->
+    <div class="portfolio-modal modal fade bd-example-modal-lg"  id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid  mb-5" src="asset/images/safe.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" >  <i class="fas fa-xmark fa-fw"></i>Close Window</button>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 6 -->
+    <div class="portfolio-modal modal fade bd-example-modal-lg"  id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span  aria-hidden="true">&times;</span>
+                  </button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid  mb-5" src="asset/images/submarine.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" >  <i class="fas fa-xmark fa-fw"></i>Close Window</button>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="asset/js/main.js"></script>
+</body>
+</html>
+
+<!--  tạo popup  -  data 
+ buttion có atribute là data-togle="modal" , data-target ="id của modal"
+
+ popup có id  trung value của data-target 
+
+ button close có thuộc tính data-dismiss  => đóng pop up
+-->
