@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" value="">
+        <button type="submit" onclick="myfunction()">Submit</button>
+    </form>
+<p id="demo"></p>
+</body>
+<script>
+  let myfunction = function(){
+    let x = document.getElementById("fname").value;
+    let text ;
+    if(isNaN(x) || x < 0 || x > 10){
+            text ="Input not valid";
+    }else{
+        text="Input Oke";
+    }
+    document.getElementById("demo").innerHTML = text;
+  }
+</script>
+</html>
