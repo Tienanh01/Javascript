@@ -335,16 +335,16 @@ var watchList = [
 
     function calculateRating(arr){
       let arrArray =  arr.filter((obj) =>{
-        return obj.Director == "Christopher Nolan" ; 
+        return obj.Director === "Christopher Nolan" ; 
       })
       console.log(arrArray);
     let total =   arrArray.reduce(function(initial, obj){
         console.log(" ini ",initial +"   ",obj.imdbRating);
-        return initial + obj.imdbRating;
+        return initial + parseFloat(obj.imdbRating);
       },0.0)
 
       console.log(total);
-      return total/arr.length ;
+      return total/arrArray.length ;
     }
 
 // Expected results
@@ -353,6 +353,7 @@ console.log(calculateRating(watchList)); // Output: 8.675
 console.log("...................................")
 console.log("...................................")
 
+<<<<<<< HEAD
 //  Enhanced Object literals 
 
 var name = 'javascript';
@@ -362,6 +363,116 @@ var price = 1000;
     name : 'Javascript',
     [price]:20000
  };
+=======
+// Bai  Reduce có logic như thê nào 
+ 
+console.log("................ Bài tập công tổng ...................")
+
+const numbers71 = [1,23,4,3,2,54,3,2];
+
+const result71 = numbers71.reduce( (acc, current, index ) =>{
+        return acc + current ;
+},0);
+console.log(result71);
+
+//   chỉ truyền  callback mà không truyền initialValue 
+//  nếu không truyền biến tích trữ , giá trị ban đầu là giá trị đầu tiên của mảng 
+
+
+console.log("...................................")
+console.log("...................................")
+console.log("...............Tự tạo phương thức reduces ....................")
+
+Array.prototype.reduce2 = function(callback , result){
+
+    //  khởi tạo giá trị truyền vào 
+    let i = 0 ; 
+    if(arguments.length <2 ){
+        result = this[0];
+        let i = 1;
+        
+    }
+
+    for(let  i = 0 ;i < this.length;i++){
+        console.log("this trong function : ");
+        console.log(this)
+        result = callback(result, this[i],i,this);
+
+    }
+    return result;
+}
+
+const resultTest71 = numbers71.reduce2((acc, current, index) => {
+            return acc + current; 
+},0)
+
+console.log(resultTest71);
+
+
+
+
+//  khi mảng gọi đến hàm reduce , truyền vào 2 đối số  function callback và  initial Value 
+  
+//  trong function reduce   ta tạo một  vòng lặp for ,
+//  số lần lặp là độ dài của mảng gọi đến hàm reduce , mỗi lần lặp gọi đến hàm callback 1 lần 
+console.log("...................................")
+console.log("...................................")
+
+
+console.log("---------------------- Viết lại hàm reduce lần 3 ---------------- "); 
+
+
+
+
+Array.prototype.reduce3 = function( callback , result){
+    let i =  0 ;
+
+    if(arguments.length < 2 ){
+        result = this[0];
+        i = 1 ;
+    }
+
+    for(; i < this.length ; i++ ){
+            result = callback(result, this[i], i , this);
+    }
+    return result;
+}
+
+const resultResult371 = numbers71.reduce3((acc , current, index ) => {
+    return acc + current ; 
+},0)
+
+console.log(resultResult371);
+
+
+var arr71 = [
+    ['name', 'Sơn Đặng'],
+    ['age', 18],
+];
+
+// tạo ra object dạng   { name : "sơn đặng" , age : 18};
+
+var arrToObject =  (arr) =>{
+        return arr.reduce((acc , curent, index) =>{
+            acc[curent[0]] = curent[1];
+            return acc ; 
+        } ,{})
+}
+
+console.log(arrToObject(arr));
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> d58f9bcd282417a4856a6c93695c39becde30d6e
 
  console.log(course186)
 
