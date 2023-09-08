@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .controller {
+        background-color: red;
+        width: 700px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .color-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+        padding: 10px 30px;
+        background-color: rgb(90, 77, 77);
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .button-change{
+        margin-top: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<body>
+
+    <div class="controller" id="controller1">
+
+        <div class="color-info">
+            <span style="color: #fff;">Background Color : </span>
+            <span id="color_value" style="color: blue;">Red </span>
+        </div>
+        <div class="button-change" id="btn">
+            <input type="button"  value="Click me">
+        </div>
+
+
+    </div>
+
+</body>
+
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <h1>Kiểm tra gõ chữ</h1>
+</body>
+
+<script>
+let numbers = [];
+
+for (let i = 0; i < 100; i++) {
+   numbers[i] = Math.floor(Math.random() *99);
+}
+
+console.log("thông tin mảng");
+console.log(numbers);
+let sum = 0;
+let multi = 1;
+numbers.forEach(element => {
+    sum += element;
+    multi*= element;
+});
+
+numbers.sort();
+
+console.log(numbers);
+
+console.log( "Min "+numbers[0]);
+console.log("max  : "+numbers[99]);
+
+
+
+</script>
+</html>
