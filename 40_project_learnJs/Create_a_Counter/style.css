@@ -1,0 +1,32 @@
+.controller {
+    background-color: rgb(197, 215, 215);
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button-change{
+    /* margin-top: 50px; */
+    border-radius: 5%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+}
+.button-change1{
+    /* margin-top: 50px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button-change2{
+    /* margin-top: 50px; */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
